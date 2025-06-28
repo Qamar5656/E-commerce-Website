@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-primary {
+  color: #d1d5db;
+}
+.text-secondary {
+  color: #008ecc;
+}
+.text-tertiary {
+  color: #d7edf7;
+}
+.text-light {
+  color: white;
+}
+.text-dark {
+  color: black;
+}
+
+.bg-primary {
+  background-color: #d1d5db;
+}
+.bg-secondary {
+  background-color: #008ecc;
+}
+.bg-tertiary {
+  background-color: #d7edf7;
+}
+.bg-tertiary:hover {
+  color: white;
+  background: #008ecc;
+}
+.bg-light {
+  background-color: white;
+}
+.bg-dark {
+  background-color: black;
+}
