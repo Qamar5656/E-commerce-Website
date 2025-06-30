@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <NavbarItems />
       <HeroSlider />
-      <Mobi />
+      <MobileItems />
     </>
   );
 }
