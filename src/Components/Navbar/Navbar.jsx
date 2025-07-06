@@ -14,10 +14,10 @@ const Navbar = () => {
           <div className="flex items-center">
             <input
               type="search"
-              className=" border-transparent bg-tertiary w-34 sm:w-40 md:w-60 lg:w-96 text-dark px-3 py-1 sm:py-2.5"
+              className=" border w-34 sm:w-40 md:w-60 lg:w-96 text-dark px-3 py-1 sm:py-2.5"
               placeholder="Search essentials, groceries and more..."
             />
-            <span className=" bg-primary py-2.5 px-3 cursor-pointer">
+            <span className="border bg-primary py-2.5 px-3 cursor-pointer">
               <i className="fa fa-search text-secondary"></i>
             </span>
           </div>
