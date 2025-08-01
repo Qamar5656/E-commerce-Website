@@ -1,8 +1,7 @@
 import "./App.css";
-import CategoryCard from "./Components/Categories Section/CategoryCard";
 import HeroSlider from "./Components/HomeSlider/HeroSlider";
-import MobileCard from "./Components/Mobile Section/MobileCard";
-import MobileItems from "./Components/Mobile Section/MobileItems";
+import MobileCard from "./Components/Grocery Items/GroceryCard";
+import MobileItems from "./Components/Grocery Items/GroceryItems";
 import Navbar from "./Components/Navbar/Navbar";
 import NavbarItems from "./Components/Navbar/NavbarItems";
 import TopNavbar from "./Components/Navbar/TopNavbar";
