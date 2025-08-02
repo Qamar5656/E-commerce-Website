@@ -3,7 +3,7 @@ import { FiHeart } from "react-icons/fi"; // Feather Icon - outlined heart
 const SellerDetails = () => {
   return (
     <>
-      <div className="w-full p-4 border rounded-lg shadow-sm">
+      <div className="w-full p-4 border border-gray-300 rounded-lg shadow-sm mt-5 md:mt-0">
         <h3 className="font-semibold text-lg">Supplier</h3>
         <p className="text-sm text-gray-600">Guanjoi Trading LLC</p>
         <div className="pr-20">
@@ -25,8 +25,8 @@ const SellerDetails = () => {
           </button>
         </div>
       </div>
-      <button className="mt-3 text-blue-500 flex px-14 gap-1 font-bold">
-        <FiHeart className="w-5 h-5 font-bold border-blue-500 rounded-full p-[2px] flex items-center" />
+      <button className="mt-3 text-blue-500 flex items-center gap-2 font-bold hover:underline">
+        <FiHeart className="w-5 h-5" />
         Save for later
       </button>
     </>
