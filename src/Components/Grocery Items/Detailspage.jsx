@@ -3,29 +3,31 @@ import img from "../../assets/imgs/download (4).jpg";
 import ImageGallery from "../Grocery Items Detail page/ImageGallery";
 import ImageGalleryInformation from "../Grocery Items Detail page/ImageGalleryInformation";
 import SellerDetails from "../Grocery Items Detail page/SellerDetails";
+import TitleBar from "../Grocery Items Description/TitleBar";
 
 const Detailspage = () => {
   return (
     <>
-      <div className="py-14 flex flex-col">
-        <section className="container flex gap-10">
-          <div>
+      <div className="py-14 px-4">
+        <div className="container mx-auto flex flex-col lg:flex-row gap-8 border border-gray-300 rounded-lg p-6">
+          <div className="lg:w-1/3">
             <ImageGallery />
           </div>
-          <div>
+          <div className="lg:w-1/3">
             <ImageGalleryInformation
               title="Blue T-shirt"
               rating="5"
-              reviews="good"
+              reviews="32"
               sold="120 items sold"
             />
           </div>
-          <div>
+          <div className="lg:w-1/3">
             <SellerDetails />
           </div>
-        </section>
-        <section className="container">
-          <h1 className="py-5">Description</h1>
+        </div>
+
+        <section className="container mx-auto mt-8">
+          <TitleBar />
         </section>
       </div>
     </>
