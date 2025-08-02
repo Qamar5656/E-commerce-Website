@@ -48,7 +48,8 @@ const ImageGalleryInformation = ({ title, rating, reviews, sold }) => {
         <span className="text-gray-500">
           <hr />
         </span>
-        <div className="flex flex-col py-4">
+        {/* second part  */}
+        <div className="flex flex-col pt-4">
           <div className="flex py-1">
             <p className="w-32 text-gray-500">Type:</p>
             <p>Classical Shoes</p>
@@ -63,7 +64,8 @@ const ImageGalleryInformation = ({ title, rating, reviews, sold }) => {
           </div>
         </div>
         <hr />
-        <div className="flex flex-col py-4">
+        {/* third part */}
+        <div className="flex flex-col pt-4">
           <div className="flex py-1">
             <p className="w-32 text-gray-500">Customization:</p>
             <p className="">Customized logo and design custom packages</p>
