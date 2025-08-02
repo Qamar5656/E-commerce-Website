@@ -8,8 +8,11 @@ import TitleBar from "../Grocery Items Description/TitleBar";
 const Detailspage = () => {
   return (
     <>
-      <div className="py-14 px-4">
-        <div className="container mx-auto flex flex-col lg:flex-row gap-8 border border-gray-300 rounded-lg p-6">
+      <div className="py-14">
+        <div
+          className="container mx-auto flex flex-col lg:flex-row gap-8 border border-gray-300 rounded-lg p-6"
+          style={{ padding: "13px 20px" }}
+        >
           <div className="lg:w-1/3">
             <ImageGallery />
           </div>
