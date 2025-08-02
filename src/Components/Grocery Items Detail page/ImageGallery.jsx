@@ -1,6 +1,6 @@
 import { useState } from "react";
 import img from "../../assets/imgs/download (4).jpg";
-import img2 from "../../assets/imgs/download (3).jpg";
+// import img2 from "../../assets/imgs/download (3).jpg";
 import img3 from "../../assets/imgs/images.jpg";
 import img4 from "../../assets/imgs/download (1).jpg";
 
@@ -11,7 +11,7 @@ const ImageGallery = () => {
     setSelectedImage(image);
   };
 
-  const images = [img, img2, img3, img4];
+  const images = [img, img3, img4];
 
   return (
     <div className="w-full max-w-sm mx-auto px-4">
