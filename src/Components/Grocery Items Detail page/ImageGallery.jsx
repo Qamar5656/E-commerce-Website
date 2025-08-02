@@ -14,7 +14,7 @@ const ImageGallery = () => {
   const images = [img, img2, img3, img4];
 
   return (
-    <div className="w-[300px]">
+    <div className="w-full max-w-sm mx-auto px-4">
       {/* Main Display Image */}
       <div className="border border-gray-300 rounded-lg overflow-hidden">
         <img
@@ -25,7 +25,7 @@ const ImageGallery = () => {
       </div>
 
       {/* Thumbnail Grid */}
-      <div className="grid grid-cols-4 gap-3 mt-4">
+      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-4">
         {images.map((image, idx) => (
           <img
             key={idx}
