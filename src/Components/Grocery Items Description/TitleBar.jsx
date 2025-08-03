@@ -65,17 +65,6 @@ const TitleBar = () => {
       </div>
     </div>
   );
-
-  return (
-    <>
-      <div>
-        <ul className="font-semibold text-gray-500 flex gap-12 py-6">
-          <li className="cursor-pointer">Description</li>
-          <li className="cursor-pointer">Reviews</li>
-        </ul>
-      </div>
-    </>
-  );
 };
 
 export default TitleBar;
