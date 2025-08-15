@@ -1,7 +1,7 @@
 import React from "react";
 import IconText from "./Icontext";
 
-const Navbar = () => {
+const Navbar = ({ searchQuery, setSearchQuery }) => {
   return (
     <>
       <div className="container flex flex-col sm:flex-row justify-between py-5">
@@ -16,6 +16,8 @@ const Navbar = () => {
               type="search"
               className=" border w-34 sm:w-40 md:w-60 lg:w-96 text-dark px-3 py-1 sm:py-2.5"
               placeholder="Search essentials, groceries and more..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
             />
             <span className="border bg-primary py-2.5 px-3 cursor-pointer">
               <i className="fa fa-search text-secondary"></i>
