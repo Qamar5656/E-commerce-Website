@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import IconText from "./Icontext";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ searchQuery, setSearchQuery }) => {
+  const [signupVisible, setSignUpVisible] = useState(false);
+  const [signinVisible, setSignInVisible] = useState(false);
   return (
     <>
       <div className="container flex flex-col sm:flex-row justify-between py-5">
@@ -24,10 +27,26 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
             </span>
           </div>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 sm:text-sm md:text-lg lg:text-lg xl:text-xl">
-            <IconText
-              className="fa-user text-secondary"
-              text="Sign Up/Sign In"
-            />
+            <button
+              onClick={() => {
+                setSignUpVisible(true);
+                setSignInVisible(false);
+              }}
+              className="font-bold cursor-pointer text-secondary hover:text-tertiary"
+            >
+              Sign Up
+            </button>
+
+            <button
+              onClick={() => {
+                setSignInVisible(true);
+                setSignUpVisible(false);
+              }}
+              className="font-bold cursor-pointer text-secondary hover:text-tertiary"
+            >
+              Sign In
+            </button>
+
             <span className="hidden sm:flex items-center opacity-20">|</span>
             <IconText className="fa-shopping-cart text-secondary" text="Cart" />
           </div>
