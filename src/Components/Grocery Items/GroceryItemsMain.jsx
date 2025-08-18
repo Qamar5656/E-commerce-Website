@@ -66,16 +66,6 @@ const MobileItems = ({ searchQuery }) => {
           </p>
         )}
       </div>
-      {visibleItems < items.length && (
-        <div className="mt-4 text-center">
-          <button
-            onClick={handleClick}
-            className="px-4 py-2 bg-secondary text-light rounded hover:bg-secondary cursor-pointer"
-          >
-            Load More
-          </button>
-        </div>
-      )}
     </div>
   );
 };
