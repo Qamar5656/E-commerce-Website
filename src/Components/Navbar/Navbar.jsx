@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import IconText from "./Icontext";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ searchQuery, setSearchQuery }) => {
-  const [signupVisible, setSignUpVisible] = useState(false);
-  const [signinVisible, setSignInVisible] = useState(false);
+const Navbar = ({
+  setSignUpVisible,
+  setSignInVisible,
+  searchQuery,
+  setSearchQuery,
+}) => {
   return (
     <>
       <div className="container flex flex-col sm:flex-row justify-between py-5">
@@ -17,7 +20,7 @@ const Navbar = ({ searchQuery, setSearchQuery }) => {
           <div className="flex items-center">
             <input
               type="search"
-              className=" border w-34 sm:w-40 md:w-60 lg:w-96 text-dark px-3 py-1 sm:py-2.5"
+              className=" border w-34 sm:w-40 md:w-60 lg:w-96 text-dark px-3 py-1 sm:py-2.5 rounded-l-lg"
               placeholder="Search essentials, groceries and more..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
