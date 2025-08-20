@@ -1,30 +1,30 @@
 import React from "react";
+// import useCartStore from "../store/cartStore";
+import useCartStore from "../Store/cartStore";
 
-const MobileCard = ({ data, onClick }) => {
-  let num = Math.floor(Math.random() * (100 - 30 + 1)) + 30;
-
-  if (!data) return null;
+const GroceryCard = ({ data, onClick }) => {
+  const addToCart = useCartStore((state) => state.addToCart);
 
   return (
-    <div className="cursor-pointer" onClick={onClick}>
-      <div className="container relative py-5 rounded-lg shadow-md">
-        <img
-          src={data.image || "/src/assets/imgs/mobile.webp"}
-          alt={data.model_name || "Model"}
-          className="w-full h-40 object-cover rounded-lg shadow-md"
-        />
-        <div className="absolute top-0 right-0 bg-secondary text-light rounded-tr-2xl rounded-bl-2xl p-2">
-          <p>{num}%</p>
-          <span>OFF</span>
-        </div>
-      </div>
-      <div className="flex flex-col px-3 pb-2 bg-white">
-        <h1 className="text-lg font-semibold">{data.model_name}</h1>
-        <p className="text-gray-600">{data.price}</p>
-        <p className="text-gray-500 text-sm">{data.description}</p>
-      </div>
+    <div className="border-blue-500 border rounded-lg p-4 shadow">
+      <img
+        src={data.image}
+        alt={data.model_name}
+        className="w-full h-40 object-cover rounded"
+        onClick={onClick}
+      />
+      <h2 className="text-lg font-bold">{data.model_name}</h2>
+      <p className="text-gray-600">{data.description}</p>
+      <p className="font-semibold">{data.price}</p>
+
+      <button
+        onClick={() => addToCart(data)}
+        className="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 cursor-pointer"
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
 
-export default MobileCard;
+export default GroceryCard;
