@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import IconText from "./Icontext";
 import { Link } from "react-router-dom";
 // import useCartStore from "../store/cartStore"; // <-- import Zustand store
@@ -14,6 +14,15 @@ const Navbar = ({
 
   const cartCount = cart.reduce((sum, item) => sum + item.quantity, 0); // total quantity
 
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [theme]);
   return (
     <div className="container flex flex-col sm:flex-row justify-between py-5">
       <div className="py-3 md:py-5">
