@@ -4,7 +4,7 @@ const IconText = ({ className, text }) => {
   return (
     <div className="flex items-center gap-2">
       <i className={`fas ${className}`}></i>
-      <span>{text}</span>
+      <span className="text-dark dark:text-primary">{text}</span>
     </div>
   );
 };
