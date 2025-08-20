@@ -3,11 +3,12 @@ import TopNavbar from "../Navbar/TopNavbar";
 import Navbar from "../Navbar/Navbar";
 import NavbarItems from "../Navbar/NavbarItems";
 import HomeSlider from "../HomeSlider/HeroSlider";
-import GroceryItemsMain from "../Grocery Items/GroceryItemsMain";
+import GroceryItemsMain from "../Garments Items/GroceryItemsMain";
 import Footer from "../Footer/Footer";
 import SignUp from "../Forms/SignUp";
 import SignIn from "../Forms/SignIn";
 import Chatbot from "../models/Chatbot";
+import MobileMain from "../Mobile Items/MobileMain";
 
 const Homepage = () => {
   const [signUpVisible, setSignUpVisible] = useState(false);
@@ -29,9 +30,10 @@ const Homepage = () => {
           setSignUpVisible={setSignUpVisible}
           setSignInVisible={setSignInVisible}
         />
-        <NavbarItems />
+        {/* <NavbarItems /> */}
         <HomeSlider />
         <GroceryItemsMain searchQuery={searchQuery} />
+        <MobileMain />
 
         {/* Chat toggle button */}
         <div
