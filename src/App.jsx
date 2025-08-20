@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Detailspage from "./Components/Grocery Items/Detailspage";
+import Detailspage from "./Components/Garments Items/Detailspage";
 import Homepage from "./Components/Pages/Homepage";
 import CartPage from "./Components/Store/CartPage";
 
