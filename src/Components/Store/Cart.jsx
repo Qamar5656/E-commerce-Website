@@ -25,7 +25,7 @@ const Cart = () => {
                   className="w-16 h-16 object-cover rounded"
                 />
                 <span>
-                  {item.model_name} (x{item.quantity})
+                  {item.model_name} (x{item.quantity}) {item.price}
                 </span>
               </div>
               <button
